@@ -1,0 +1,13 @@
+.title-header-search{
+    max-width: 500px;
+    flex: 1 auto;
+}
+.flex-1{
+    flex: 1 1 0%;
+}
+#first-paste{
+    margin-top: 60px;
+}
+.collapse ul.navbar-nav>li>a{
+    color: white;
+}

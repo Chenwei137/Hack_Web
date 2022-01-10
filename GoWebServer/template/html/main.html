@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>首頁</title>
+        <link href="../assets/css/bootstrap.css" rel="stylesheet">
+        <link rel="stylesheet" href="../assets/css/MainBody.css">
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css">
+        <script src="../assets/js/bootstrap.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="../assets/js/TextAreaAdjust.js"></script>
+        <script src="../assets/js/ReleaseArticle.js"></script>
+    </head>
+    <body>
+        <div class="navbar navbar-expand-lg bg-dark navbar-dark navbar-fixed-top">
+                <div class="container">
+                    <a class="navbar-brand" href="/main">
+                        <span class="h3 mx-2">
+                            THU_Hack
+                        </span>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="mynavbar">
+                        <ul class="nav navbar-nav me-auto my-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="/main">首頁<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/user">Yourself</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="dropdown nav-item">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">分類 <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="#">密碼學</a></li>
+                                  <li><a class="dropdown-item" href="#">WEB</a></li>
+                                  <li><a class="dropdown-item" href="#">逆向與漏洞</a></li>
+                                  <li><a class="dropdown-item" href="#">數位鑑識</a></li>
+                                  <li><a class="dropdown-item" href="#">其他</a></li>
+                                  <li class="divider"></li>
+                                  <li>
+                                    <form method="get" action="/search" class="navbar-form" accept-charset="UTF-8">
+                                        <input name="utf8" class="form-control" type="hidden" value="✓">
+                                        <div class="title-fields title-fields-horizontal">
+                                            <div class="title-field flex-1">
+                                                <input class="title-header-search-input title-textfield" type="text" id name="search-input" placeholder="Search...">
+                                            </div>
+                                        </div>
+                                    </form>
+                                  </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="d-flex my-auto">
+                            <li style="margin: 0 20px 0 0;"><a href="/create"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                            <li><a href="/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                        </ul>
+                    </div>
+            </div>
+            
+            <!--<div class="collapse navbar-collapse" id="header-search">
+                <form method="get" action="/search" class="form-inline my-2 my-lg-0" accept-charset="UTF-8">
+                    <input name="utf8" class="form-control mr-sm-2" type="hidden" value="✓">
+                    <div class="title-fields title-fields-horizontal">
+                        <div class="title-field flex-1">
+                            <input class="title-header-search-input title-textfield" type="text" id name="search-input" placeholder="Search...">
+                        </div>
+                    </div>
+                </form>
+            </div>-->
+        </div>
+        <div class="clearfix container py-3">
+            <div class="jumbotron col-lg-9 mx-auto">
+                <div class="row">
+                    <div class="col-lg-2 my-auto">
+                        <input class="form-control input-resize" type="text" style="height: 35px; width: 100%;" name="title" id="article_title" placeholder="文章標題">
+                    </div>
+                    <div class="col-lg-2 my-auto">
+                        <select class="form-select form-select-lg" aria-label="Default select example" id="type-result">
+                                <option value="other">無</option>
+                                <option value="cryptology">密碼學</option>
+                                <option value="web">WEB</option>
+                                <option value="rel">逆向與漏洞</option>
+                                <option value="df">數位鑑識</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group py-3">
+                    <textarea class="form-control textarea-autosize" id="ArticleTextArea" rows="5" placeholder="有什麼想說的...?"></textarea>    
+                </div>
+                <hr class="my-2">
+                <button type="submit" class="btn btn-primary btn-lg" id="release">發佈</button><br>
+                <span id="texterror"></span>
+            </div>
+            <h1>文章</h1> 
+            <article>
+                <div class="jumbotron">
+                    <h3 class="display-6">Hello, world!</h3>
+                    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+                    <hr class="my-4">
+                    <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+                    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                </div>
+                <figure>
+                    <blockquote class="blockquote">
+                      <p>A well-known quote, contained in a blockquote element.</p>
+                    </blockquote>
+                    <figcaption class="blockquote-footer">
+                      Someone famous in Source Title
+                    </figcaption>
+                  </figure>
+            </article>
+            
+        </div>
+        <!--<div class="body-container" id="first-paste">
+            <form method="get">
+                <textarea id=new_paste name=new_paste placeholder="你想說什麼？"></textarea>
+            </form>
+        </div>-->
+        
+    </body>
+</html>

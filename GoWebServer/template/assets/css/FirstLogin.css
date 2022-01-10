@@ -1,0 +1,50 @@
+.card0 {
+  box-shadow: 0px 4px 8px 0px #757575;
+}
+.center {
+  margin: auto;
+  width: 30%;
+  padding: 10px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+#login_button {
+  background-color: rgb(85, 85, 243);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 40%;
+  margin-left: 30%;
+  margin-right: 30%
+}
+.container {
+  padding: 16px;
+}
+#create_button {
+  background-color: rgb(85, 85, 243);
+  color: white;
+  padding: 14px 20px;
+  border: none;
+  cursor: pointer;
+  width: 40%;
+  margin-left: 30%;
+  margin-right: 30%
+}
+.forget_password {
+  float: right;
+}
+#title {
+  text-align: center;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Create account
+        </title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="../assets/js/new_account.js"></script>
+        <link rel="stylesheet" href="./assets/css/CreateAccount.css">
+    </head>
+    <body>
+        <div class="container card0" id="login-pane" role="tabpanel">
+            <a href="/login">返回登入</a>
+            <div class="login-body">
+                <form class="user-login" id="login">
+                    <label for="username">
+                        <b>
+                            Username：
+                        </b>
+                        <input id="username" type="text" name="new_account" placeholder="請輸入使用者名稱" required>
+                    </label>
+                    <label for="password">
+                        <b>
+                            Password：
+                        </b>
+                        <input id="passwd" type="password" name="new_password" placeholder="請輸入密碼" required>
+                    </label>
+                    <label for="check_password">
+                        <b>
+                            Check_Password：
+                        </b>
+                        <input id="ckpasswd" type="password" name="check_password" placeholder="請確認密碼" required>
+                    </label>
+                    <button type="submit" id="create_button">
+                        <div class="Login">
+                            建立
+                        </div>
+                    </button> 
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

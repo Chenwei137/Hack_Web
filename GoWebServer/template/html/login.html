@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            THU_Hack
+        </title>
+        <link href="../assets/css/bootstrap.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="../assets/js/bootstrap.js"></script>
+        <script src="../assets/js/login.js"></script>
+        <link rel="stylesheet" href="../assets/css/FirstLogin.css">
+    </head>
+    <body>
+        {{if .error}}
+            <div class="alert alert-danger" role="alert">
+                {{ .error }}
+            </div>
+        {{end}}
+        <div id="title">
+            <h1>Wellcome To THU_Hack</h1>
+        </div>
+        <div class="container card0 center" id="login-pane" role="tabpanel">
+            <div class="login-body">
+                <form class="user-login" id="login" method="post">
+                    <label for="username">
+                        <div>
+                            Username：
+                            <input type="text" name="account" placeholder="請輸入使用者名稱" required>
+                        </div>
+                    </label>
+                    <label for="password">
+                        <div>
+                            Password：
+                            <input type="password" id="password" name="password" placeholder="請輸入密碼" required>
+                        </div>
+                        <input type="checkbox" checked="checked" id="wordchange" name="wordchange">顯示密碼
+                    </label>
+                    <button type="submit" id="login_button">
+                        <div class="Login">
+                            登入
+                        </div>
+                    </button> 
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember"> Remember me 
+                      </label>
+                      <div class="forget_password" id="forget_password">
+                        Forgot <a href="/reset"> password? </a> 
+                      </div>
+                </form>
+            <div class="container" style="background-color: #f1f1f1;"> 
+                    <button type="submit" id="create_button">
+                        <div class="create">
+                            Create new account?
+                        </div>
+                    </button> 
+            </div>
+            </div>
+        </div>
+    </body>
+</html>

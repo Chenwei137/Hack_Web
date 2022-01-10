@@ -1,0 +1,10 @@
+.textarea-autosize{
+    resize: none;
+    font-size: 17px;
+}
+body{
+    background-color: gray !important;
+}
+.input-resize{
+    font-size: 17px;
+}
