@@ -21,8 +21,8 @@ type Article struct {
 }
 
 const (
-	UserName string = "yuwei"
-	Password string = "tp6m4jo3"
+	UserName string = ""
+	Password string = ""
 	Addr     string = "127.0.0.1"
 	Port     int    = 3306
 	Database string = "hack_account"
